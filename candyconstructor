@@ -1,0 +1,120 @@
+/*#include<iostream>
+using namespace std;
+class Candy{
+    string color;
+    int points;
+    public:
+    void setCandy(string c,int p);
+    void displayCandy();
+};
+void Candy::setCandy(string c,int p){
+    color=c;points=p;
+}
+void Candy:: displayCandy(){
+    cout<<"\n color is:"<<color;
+    cout<<"\n your points is:"<<points;
+}
+int main (){
+    Candy c1,c2;
+    c1.setCandy("blue",54);
+    c2.setCandy("pink",45);
+    c1.displayCandy();
+    c2.displayCandy();
+}*/
+/*#include<iostream>
+using namespace std;
+class Candy{
+    string color;
+    int points;
+    public:
+    void loose_point(int l);
+    void gain_point(int g);
+    void setCandy(string c,int p);
+    void displayCandy();
+
+};
+void Candy::setCandy(string c,int p){
+    color=c;points=p;
+}
+
+void Candy::loose_point(int l){
+    points=points-l;
+}
+void Candy::gain_point(int g){
+    points=points+g;
+}
+ void Candy:: displayCandy(){
+    cout<<"\n color is:"<<color;
+    cout<<"\n your points is:"<<points;
+   
+    
+
+ }
+int main(){
+    Candy c1,c2;
+    c1.setCandy("pink",45);
+    c2.setCandy("blue",50);
+    c1.gain_point(40);   
+    c1.displayCandy();
+    c2.loose_point(5);
+    c2.displayCandy();
+
+}*/
+#include<iostream>
+using namespace std;
+class Candy{
+    string color;
+    int points;
+    int gain_points;
+    int loose_points;
+    public:
+    Candy ();
+    Candy (int,string);
+    Candy(int,string,int,int);
+    void gain_points(int g);
+    void loose_points(int g);
+    void setCandy(string c,int p);
+    void displayCandy();
+
+};
+Candy::Candy(){
+color="";
+points=0;
+}
+Candy::Candy(int point,string colors){
+    points=point;
+    string color=colors;
+}
+Candy::Candy(int point,string colors,int gainpoint,int loosepoint){
+    points=point;
+    string color=colors;
+    int gain_points=gainpoint;
+    int loose_points=loosepoint;
+}
+void Candy::gain_points(int g){
+    points=points+g;
+}
+void Candy::loose_points(int g){
+    points=points-g;
+}
+
+
+void Candy::displayCandy(){
+    cout<<"\n the color of the canddy:"<<color;
+    cout<<"\n the points are:"<<points<<endl;
+}
+int main (){
+   Candy c1,c2;
+   c1.setCandy("pink",45);
+    c2.setCandy("blue",50);
+    c1.displayCandy();
+    c2.displayCandy();
+     c2.gain_points(40); 
+    c1.loose_points(5);
+    c1.displayCandy();
+    c2.displayCandy();
+    return 0;
+
+
+
+}
