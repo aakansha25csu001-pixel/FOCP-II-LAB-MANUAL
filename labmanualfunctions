@@ -1,0 +1,198 @@
+//lab manual ques
+/*#include<iostream>
+using namespace std;
+int swap(int a,int b);
+int main (){
+    int a,b;
+    cout<<"enter two number:";
+    cin>>a>>b;
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    cout<<"swapped numbers are:"<<a<<"  "<<b<<endl;
+
+}
+int swap(int a,int b){
+    return swap(a,b);
+}*/
+
+//labmanual question
+
+/*#include<iostream>
+using namespace std;
+void computeperformance( int arr[],int n);
+int main (){
+    int arr[]={12,23,45,34,56,98,76};
+    computeperformance(arr,7);
+    return 0;
+
+}
+
+void computeperformance( int arr[],int n){
+    int max=arr[0],min=arr[0],avg=arr[0];
+    for(int i=1;i<n;i++){
+        if(min>arr[i]){
+            min=arr[i];
+        }
+        if(max<arr[i]){
+            max=arr[i];
+        }
+        avg+=arr[i];
+
+    }
+    cout<<"average is:"<<avg/n<<endl;
+    cout<<"minimum is:"<<min<<endl;
+    cout<<"maximum is:"<<max<<endl;
+}*/
+/*#include<iostream>
+#include<math.h>
+using namespace std;
+double calculateEMI(double P,double R=0.01,int T=12);
+int main (){
+    double P,EMI;
+   
+    cout<<"enter principal amount:"<<endl;
+    cin>>P; 
+
+    cout<<"the emi of loan is:"<<EMI<<endl;
+    return 0;
+}
+double calculateEMI(double P,double R,int T){
+    double EMI=(P*R*pow(1+R,T))/(pow(1+R,T));
+    return EMI;
+}*/
+/*#include<iostream>
+using namespace std;
+int digitsum(int num);
+int main (){
+    int number;
+    cout<<"enter a number:";
+    cin>>number;
+    cout<<"sum of digits is:"<<digitsum(number);
+    return 0;
+}
+int digitsum(int num){
+    int sum=0;
+    while(num!=0){
+        sum+=num%10;
+        num/=10;
+    }
+    return sum;
+}*/
+/*#include<iostream>
+using namespace std;
+int sum(int a,int b);
+int substract(int a,int b);
+int multiply(int a,int b);
+double divide(int a,int b);
+int main (){
+    int choice;
+    int a,b;
+    cout<<"1.ADDITION\n";
+    cout<<"2.MULTIPLY\n";
+    cout<<"3.DIVIDE\n";
+    cout<<"4.SUBTRACT\n";
+    cout<<"enter your choicee:";
+    cin>>choice;
+    cout<<"enter two numbers:";
+    cin>>a>>b; 
+
+if (choice==1){
+cout<<"the result is:"<<sum(a,b);
+}
+ else if (choice==2){
+        cout<<"the result is:"<<multiply(a,b);
+    }
+
+ else if (choice==3){
+        cout<<"the result is:"<<divide(a,b);
+    }
+   else if (choice==4){
+        cout<<"the result is:"<<substract(a,b);
+    }
+    else cout<<"invalid!";
+    return 0;
+} 
+int sum(int a,int b){
+    return (a+b);
+}
+int substract(int a,int b){
+    return(a-b);
+}
+int multiply(int a,int b){
+    return(a*b);
+}
+double divide(int a,int b){
+    return double(a/b);
+}*/
+//lab manual ques
+/*#include<iostream>
+using namespace std;
+float areacircle(int a);
+int arearectangle(int l,int b);
+int areatriangle(int b,int h);
+int main(){ 
+    cout<<"1.AREA OF CIRCLE\n";
+    cout<<"1.AREA OF RECTANGLE\n";
+    cout<<"1.AREA OF TRIANGLE\n";
+    int l,b,h,a;
+    int choice;
+
+    cout<<"enter choice:";
+    cin>>choice;
+    
+    if (choice==1){
+        cout<<"enter radius:";
+        cin>>a;
+        cout<<"the area of circle:"<<areacircle(a);
+    }
+    else if (choice==2){ 
+        cout<<"enter length n breadth:";
+        cin>>l>>b;
+        cout<<"the area of rectangle:"<<arearectangle(l,b);
+       
+    }
+    else if (choice==3){
+        cout<<"enter basee n height:";
+        cin>>b>>h;
+        cout<<"the area of triangle"<<areatriangle(b,h);
+    }
+    else 
+    cout<<"INVALID";
+    return 0;
+ } 
+float areacircle(int a){
+   float areacircle=3.14*a*a;
+     return areacircle;
+    }
+int arearectangle(int l,int b){
+ int arearectangle=l*b;
+ return arearectangle;
+}
+int areatriangle(int b,int h){
+    int areatriangle=0.5*b*h;   
+    return (areatriangle);
+}*/
+/*#include<iostream>
+using namespace std;
+bool isPrime(int n);
+int main (){
+    int n;
+    cout<<"enter a number:";
+    cin>>n;
+    if(isPrime(n))
+    cout<<"prime";
+    else cout<<"not prime:";  
+    return 0;
+}
+bool isPrime(int n){
+   if (n<=1){
+    return false;
+   }
+   for(int i=2;i<n;i++){
+    if(n%i==0){
+        return false;
+    }
+    else return true;
+   }
+}*/
