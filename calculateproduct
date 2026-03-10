@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+int multiply(int ,int);
+int multiply(int,int,int);
+double multiply(double,double);
+int main (){
+    int a,b,c;
+    double d,e;
+    cout<<"enter all number:";
+    cin>>a>>b>>c>>d>>e;
+    cout<<multiply(a,b);
+    cout<<multiply(a,b,c);
+    cout<<multiply(d,e);
+
+
+}
+int multiply(int a,int b){
+    int multiply=a*b;
+    cout<<"\nthe product of two number:";
+    return multiply;
+}
+int multiply(int a,int b,int c){
+    int multiply=a*b*c;
+    cout<<"\nthe product of three number:";
+    return multiply;
+
+}
+double multiply(double d,double e){
+    double multiply=d*e;
+    cout<<"\nthe product of two number:";
+
+    return multiply;
+}
