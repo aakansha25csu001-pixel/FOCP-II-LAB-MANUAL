@@ -1,0 +1,79 @@
+/*#include<iostream>
+using namespace std;
+class Rectangle{
+float length;
+float width;
+public :
+void inputDimension();
+float calculateArea();
+float calculatePerimeter ();
+void displayresult();
+};
+
+void Rectangle::inputDimension(){
+    cout<<"enter length n width";
+    cin>>length>>width;
+}
+float Rectangle::calculateArea(){
+    return (length*width);
+}
+float Rectangle::calculatePerimeter(){
+    return(2*(length+width));
+}
+void Rectangle::displayresult(){
+    cout<<"area of rectangle:"<<calculateArea()<<endl;
+    cout<<"perimeter of rectangle:"<<calculatePerimeter()<<endl;
+}
+
+int main (){
+    Rectangle r1;
+    r1.inputDimension();
+    r1.displayresult();
+        return 0;
+}*/
+#include<iostream>
+using namespace std;
+ class Student
+ {
+ string name;
+ int rollno;
+ int m1,m2,m3;
+ 
+ public:
+ Student();
+ Student(int,string);
+ Student(int,string,int,int,int);
+ void displayDetails();
+ int calculateTotal ();
+ };
+ Student::Student(){
+    rollno=0;
+    name="";
+    m1=0;m2=0;m3=0;
+ }
+ Student::Student(int rno,string n){
+    rollno=rno;
+    string name=n;
+    m1=0;m2=0;m3=0;
+ }
+
+Student::Student(int rno,string n,int m11,int m22,int m33){
+    rollno=rno;
+    string name=n;
+    int marks=m11;int marks2=m22;int marks3=m33;
+}
+int Student:: calculateTotal(){
+    return(m1+m2+m3);
+ }
+void Student::displayDetails(){
+    cout<<"\n Name:"<<name<<"\nroll no:"<<rollno;
+    cout<<"\nmarks1:"<<m1<<"\nmarks2:"<<m2<<"\nmarks3:"<<m3;
+    cout<<"\ntotal:"<<calculateTotal();
+}
+int main (){
+    Student s1;
+    Student s2(120,"abcd"),s3(130,"abcd",34,56,78);
+    s1.displayDetails();
+    s2.displayDetails();
+    s3.displayDetails();
+}
