@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+  void swap(int a,int b){
+  
+      int temp;
+      temp=a;
+      a=b;
+      b=temp;
+        cout<<"inside function swap a="<<a<<"b="<<b<<endl;
+    }
+
+  int main (){
+    int a,b;
+    cout<<"\n enter two numbers:";
+    cin>>a>>b;
+    cout<<"before swap a="<<a<<"b="<<b<<endl;
+    swap(a,b);//for call
+    cout<<"after swap a="<<a<<"b="<<b<<endl;
+    return 0;
+
+  }
