@@ -1,0 +1,456 @@
+/*#include<iostream>
+using namespace std;
+class Student{
+    string name;
+    int marks;
+    public:
+    Student();
+    Student(string,int);
+    void displaydetails();
+};
+Student::Student()
+{
+    name="";
+    marks=0;
+}
+Student::Student(string name1,int mark){
+ name=name1;
+ marks=mark;
+}
+ void Student::displaydetails(){
+    cout<<"\nenter your name:"<<name;
+    cout<<"\n enter your marks:"<<marks;
+ }
+ int main (){
+    Student s1;
+    Student s2("AAKANSHA",96);
+    s1.displaydetails();
+    s2.displaydetails();
+ }*/
+//ques 2
+/*#include<iostream>
+using namespace std;
+class Car{
+    string brand;
+    int price;
+    public:
+    Car();
+    Car(string brand ,int price);
+    void display();
+};
+Car::Car(){
+    brand="";
+    price=0;
+}
+Car::Car( string br,int pr){
+    brand=br;
+    price=pr;
+}
+void Car::display(){
+    cout<<"\nthe brand name is:"<<brand;
+    cout<<"\nthe price of car is:"<<price;
+}
+int main (){
+    Car c1;
+    Car c2("MARUTI SUZUKI",67000);
+    c1.display();
+    c2.display();
+}*/
+/*#include<iostream>
+using namespace std;
+class Rectangle{
+    int length,breadth;
+    public:
+    void inputdimensions();
+    float calculateArea();
+    float calculatPerimeter();
+    void displaydetails();
+
+};
+void  Rectangle::inputdimensions(){
+    cout<<"enter length and breadth";
+    cin>>length>>breadth;
+}
+float Rectangle::calculateArea(){
+    return(length*breadth);
+}
+float Rectangle::calculatPerimeter(){
+    return (2*(length+breadth));
+}
+void Rectangle::displaydetails(){
+    cout<<"\n the area of rectangle:"<<calculateArea();
+    cout<<"\n th perimeter is:"<<calculatPerimeter();
+}
+int main (){
+    Rectangle r1;
+    r1.inputdimensions();
+    r1.displaydetails();
+}*/
+//ques 4
+/*#include<iostream>
+using namespace std;
+class Employee{
+    string emp_id;
+    int salary;
+    public:
+    Employee();
+    Employee(string,int);
+    void displaydetails();
+
+};
+Employee::Employee(){
+    emp_id="";
+    salary=0;
+}
+Employee::Employee(string emp,int sly){
+    emp_id=emp;
+    salary=sly;
+}
+void Employee::displaydetails(){
+    cout<<"\nemployee id:"<<emp_id;
+    cout<<"\nsalary of employee:"<<salary;
+}
+int main (){
+    Employee e1;
+    Employee e2("SHRUTI7657",600000);
+    e1.displaydetails();
+    e2.displaydetails();
+}*/
+/*#include<iostream>
+using namespace std;
+class BankAccount{
+    int accountNo;
+    float balance;
+    public:
+    BankAccount();
+    BankAccount(int,float);
+    void display_details();
+};
+BankAccount::BankAccount(){
+    accountNo=0;
+    balance=0;
+}
+ BankAccount::BankAccount(int accno,float bln){
+    accountNo=accno;
+    balance=bln;
+  }
+  void BankAccount::display_details(){
+    cout<<"\nthe account no is :"<<accountNo;
+    cout<<"\nthe balnce is:"<<balance;
+  }
+  int main (){
+    BankAccount b1;
+    BankAccount b2(34630576,6700);
+    b1.display_details();
+    b2.display_details();
+  }*/
+/*#include<iostream>
+using namespace std;
+class Book{
+    string title;
+    int price;
+    public:
+    Book(string,int);
+    void display_details();
+
+};
+Book::Book(string t,int pr){
+    title=t;
+    price=pr;
+}
+void Book::display_details(){
+    cout<<"\nthe title of the book:"<<title;
+    cout<<"\n the price of the book:"<<price;
+}
+int main (){
+    Book b1("ANNY FRANK",700);
+    Book b2("RICH DAD",500);
+    Book b3("IKIGAI",450);
+    b1.display_details();
+    b2.display_details();
+    b3.display_details();
+}*/
+/*#include<iostream>
+using namespace std; 
+class Table{
+    string material;
+    int price;
+    int legs;
+    public:
+    Table();
+    Table(string,int);
+    Table(string,int,int);
+    void display_details();
+};
+Table::Table(){
+    material="WOOD";
+    price=5000;
+    legs=4;
+}
+Table::Table(string m,int pr){
+    material=m;
+    price=pr;
+    legs=4;
+}
+Table::Table(string m,int pr,int l){
+    material=m;
+    price=pr;
+    legs=l;
+}
+void Table::display_details(){
+    cout<<"\n the material fo the table:"<<material;
+    cout<<"\n the price of the table:"<<price;
+    cout<<"\n no of legs are:"<<legs;
+}
+int main (){
+    Table t1;
+    Table t2("plastic",1000);
+    Table t3("metal",1500,3);
+    t1.display_details();
+    t2.display_details();
+    t3.display_details();
+}*/
+
+/*#include<iostream>
+using namespace std;
+float volume(float side);
+float volume(float l,float b,float h);
+float volume(float r,float hc);
+ int main (){
+
+    float side,l,b,h,r,hc;
+    cout<<"enter length breadth,widht,radius,height,hc";
+    cin>>side>>l>>b>>h>>r>>hc;
+    cout<<"\n the volume of cube:"<<volume(side);
+    cout<<"\n the volume of cuboid:"<<volume(l,b,h);
+    cout<<"\n the volume of cylinder:"<<volume(r,hc);
+}
+float volume(float side){
+    return (side*side*side);
+}
+float volume(float l,float b,float h){
+    return(l*b*h);
+}
+float volume(float r,float hc){
+    return (3.14*r*r*hc);
+}*/
+/*#include<iostream>
+using namespace std;
+int calculateBill(int units);
+float  calculateBill(int units,float rate);
+float calculateBill(int units,float rate,float fixedcharge);
+
+    int calculateBill(int units){
+        return(5*units);
+    }
+    float calculateBill(int units,float rate){
+        return(units*rate);
+    }
+    float calculateBill(int unit,float rate,float fixedcharge){
+        return((unit*rate)+fixedcharge);
+    }
+    int main (){
+        int units;
+        float rate,fixedcharge;
+        cout<<"\n enter units,rate,fixedcharge:";
+        cin>>units>>rate>>fixedcharge;
+        cout<<"\n the bill at 5 perunit rate:"<<calculateBill(units);
+        cout<<"\n the bill per rate:"<<calculateBill(units,rate);
+        cout<<"\n the total bill is:"<<calculateBill(units,rate,fixedcharge);
+    }*/
+   
+ /*#include<iostream>
+using namespace std;
+
+class Product {
+private:
+    string name;
+    float price;
+    int quantity;
+
+public:
+    Product(string n, float p, int q) {
+        name = n;
+        price = p;
+        quantity = q;
+    }
+     ~Product() {
+        cout << "\nProduct removed from memory." << endl;
+    }
+    
+    float totalCost() {
+        return price * quantity;
+    }
+    void display() {
+        cout << "\nProduct Name: " << name;
+        cout << "\nPrice: " << price;
+        cout << "\nQuantity: " << quantity;
+        cout << "\nTotal Cost: " << totalCost() << endl;
+    }
+};
+
+int main() {
+    Product p1("Laptop", 50000, 1);
+    Product p2("Headphones", 2000, 2);
+    p1.display();
+    p2.display();
+
+    return 0;
+}*/
+/*#include<iostream>
+using namespace std;
+class Course{
+    string name;
+    string instructor;
+    int duration;
+    public:
+    Course(string,string,int);
+    void displaydetails();
+    ~Course(){
+        cout<<"\ncourse rmoved for memory";
+    }
+};
+Course::Course(string n,string i,int d){
+    name=n;
+    instructor=i;
+    duration=d;
+}
+void Course::displaydetails(){
+    cout<<"\n the course name :"<<name;
+    cout<<"\n the instructor name:"<<instructor;
+    cout<<"\n the  duration of the course:"<<duration;
+}
+int main (){
+    Course c1("PYTHON","RAVI",5);
+    Course c2("JAVA","KISAN",8);
+    c1.displaydetails();
+    c2.displaydetails();
+}*/
+/*#include<iostream>
+using namespace std;
+class Mobile{
+    string brand;
+    int price;
+    int storage;
+    public:
+    Mobile( string );
+    Mobile(string,int);
+    Mobile(string,int,int);
+    void display();
+
+};
+Mobile::Mobile(string b){
+   brand=b;
+   price=0;
+}
+Mobile::Mobile(string b,int p){
+    brand=b;
+    price=p;
+    storage=0;
+}
+Mobile::Mobile(string b,int p,int s){
+    brand=b;
+    price=p;
+    storage=s;
+}
+void Mobile::display(){
+    cout<<"\nthe brand name is:"<<brand;
+    cout<<"\nthe price of mobile:"<<price;
+    cout<<"\nthe storage is:"<<storage;
+}
+int main(){
+    Mobile m1("SAMSUNG");
+    Mobile m2("APPLE",50000);
+    Mobile m3("VIVO",60000,128);
+    m1.display();
+    m2.display();
+    m3.display();
+}*/
+
+/*#include<iostream>
+using namespace std;
+class Laptop{
+    string brand;
+    int RAM;
+    int price;
+    public:
+    Laptop(string);
+    Laptop(string,int);
+    Laptop(string,int,int);
+    void setdetails();
+};
+Laptop::Laptop(string br){
+    brand=br;
+    RAM=0;
+    price=0;
+}
+Laptop::Laptop(string br,int R){
+    brand=br;
+    RAM=R;
+    price=0;
+}
+Laptop::Laptop(string br,int R,int p){
+    brand=br;
+    RAM=R;
+    price=p;
+}
+void Laptop::setdetails(){
+    cout<<"\nthe brand name is:"<<brand;
+    cout<<"\n the RAM available is:"<<RAM;
+    cout<<"\n the price of the laptop:"<<price;
+}
+int main (){
+    Laptop l1("DELL");
+    Laptop l2("APPLE",128);
+    Laptop l3("LENEVO",512,80000);
+    l1.setdetails();
+    l2.setdetails();
+    l3.setdetails();
+}*/
+/*#include<iostream>
+using namespace std;
+
+class Vehicle {
+private:
+    string vehicleNumber;
+    string ownerName;
+    string type;
+    float fee;
+
+public:
+    Vehicle() {
+        vehicleNumber = "Not Assigned";
+        ownerName = "Unknown";
+        type = "General";
+        fee = 0;
+    }
+    Vehicle(string v, string o) {
+        vehicleNumber = v;
+        ownerName = o;
+        type = "General";
+        fee = 0;
+    }
+    Vehicle(string v, string o, string t, float f) {
+        vehicleNumber = v;
+        ownerName = o;
+        type = t;
+        fee = f;
+    }
+    void displayVehicle() {
+        cout << "\nVehicle Number: " << vehicleNumber;
+        cout << "\nOwner Name: " << ownerName;
+        cout << "\nVehicle Type: " << type;
+        cout << "\nRegistration Fee: " << fee << endl;
+    }
+};
+
+int main() {
+    Vehicle v1;   
+    Vehicle v2("DL01AB1234", "Rahul Sharma");   
+    Vehicle v3("UP32CD5678", "Anita Singh", "Private", 2500);  
+    v1.displayVehicle();
+    v2.displayVehicle();
+    v3.displayVehicle();
+
+    return 0;
+}*/
