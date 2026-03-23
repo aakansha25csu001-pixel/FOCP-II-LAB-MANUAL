@@ -1,0 +1,18 @@
+*#include<iostream>
+using namespace std;
+int digitsum(int num);
+int main (){
+    int number;
+    cout<<"enter a number:";
+    cin>>number;
+    cout<<"sum of digits is:"<<digitsum(number);
+    return 0;
+}
+int digitsum(int num){
+    int sum=0;
+    while(num!=0){
+        sum+=num%10;
+        num/=10;
+    }
+    return sum;
+}*/
