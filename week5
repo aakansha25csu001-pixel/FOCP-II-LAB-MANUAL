@@ -165,23 +165,7 @@ int bigger(int a,int b){
         return b;
     }
 }*/
-//lab manual ques
-/*#include<iostream>
-using namespace std;
-int swap(int a,int b);
-int main (){
-    int a,b;
-    cout<<"enter two number:";
-    cin>>a>>b;
-    a=a+b;
-    b=a-b;
-    a=a-b;
-    cout<<"swapped numbers are:"<<a<<"  "<<b<<endl;
 
-}
-int swap(int a,int b){
-    return swap(a,b);
-}*/
 
 //labmanual question
 
