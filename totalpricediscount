@@ -1,0 +1,21 @@
+/*#include<iostream>
+using namespace std;
+int main (){
+     int itemno,quantity;
+     float totalamount,unitprice,finalamount,discount;
+     cout<<"enter item no:\n";
+     cin>>itemno;
+     cout<<"enter the quantity:\n";
+     cin>>quantity;
+     cout<<"enter the unit price:\n";
+     cin>>unitprice;
+     totalamount=quantity*unitprice;
+     discount=totalamount*0.20;
+     finalamount=totalamount-discount;
+
+     cout<<"\nitemno:"<<itemno<<endl;
+     cout<<"\nquantity:"<<quantity<<endl;
+     cout<<"\ntotalamount:"<<totalamount<<endl;
+     cout<<"\ndiscount:"<<discount<<endl;
+     cout<<"\nfinalamount:"<<finalamount<<endl;
+     return 0;     
