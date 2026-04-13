@@ -1,0 +1,54 @@
+#include<iostream>
+using namespace std;
+class Account {
+
+int account_no;
+
+protected:
+float balance;
+public:
+Account(){
+    cout<<"DEFAULT INHERITANCE";
+    account_no=0;
+    balance=0;
+}
+Account(int accno,float bal){
+    cout<<"PARAMETERISED";
+    this->account_no=accno;;
+    this->balance=bal;
+}
+   void displaydetails(){
+    
+    cout<<"\nenter account number:"<<account_no<<endl<<"enter balance:"<<balance;
+}
+
+};
+class savings_account:public Account{
+    int interestrate;
+    
+    public:
+    savings_account(){
+        interestrate=0;
+      
+    }
+    savings_account(int accno,float bal,float ir):Account(accno,bal){
+       interestrate=ir;
+       
+    }
+  
+    void calculateinterest(){
+    
+        float rate=(balance*interestrate)/100;
+        cout<<"\nthe interest is:"<<rate;
+    }
+};
+int main(){
+ savings_account s1,s2(3474,8000.50,4.5);
+ s1.calculateinterest();
+ s1.displaydetails();
+ s2.calculateinterest();
+s2.displaydetails();
+
+}
+
+
