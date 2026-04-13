@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+class Box{
+    private:
+    double length;
+    double breadth;
+    double height;
+   static int count;
+   public:
+    Box(double l=2.0,double b=2.0,double h=2.0){
+        cout<<"\n BOx constructor called"<<endl;
+        length=l;
+        breadth=b;
+        height=h;
+        count++;
+    }
+    double volume (){
+        return length*breadth*height;
+    }
+    void display(){
+        cout<<"\nlength:"<<length<<"\n breadth:"<<breadth<<"\nheight:"<<height;
+        cout<<"\n object count:"<<count;
+        cout<<"\nvolume:"<<volume();
+    }
+};
+int Box::count;
+int main (){
+    Box Box1(3.3,1.2,1.5);
+    Box1.display();
+    Box Box2(8.8,7.6,4.6);
+    Box2.display();
+}
